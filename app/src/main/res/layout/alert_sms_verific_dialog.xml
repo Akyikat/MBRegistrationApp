@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/ic_close" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/yahoo"
+        style="@style/font_30_black_semi"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/proceed_next"
+        style="@style/font_16_gray04_regular"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="253dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_24"
+        android:background="@drawable/bg_et_gray01"
+        android:paddingStart="@dimen/dp_16"
+        android:text="@string/sms_code"
+        style="@style/font_16_gray03_medium" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/background_button"
+        android:text="@string/proceed"
+        style="@style/font_18_white_semi"
+        android:textAllCaps="false" />
+
+    <Button
+        style="@style/font_18_primary_semi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:background="@android:color/transparent"
+        android:text="@string/did_not_get_the_code"
+        android:textAllCaps="false" />
+</LinearLayout>

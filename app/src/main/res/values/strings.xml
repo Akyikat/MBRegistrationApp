@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MBRegistrationApp</string>
+    <string name="registration">Регистрация</string>
+    <string name="enter_phone_num_click_next">Введите номер телефона и нажмите “Далее”</string>
+    <string name="phone_num">Номер телефона</string>
+    <string name="next">Далее</string>
+    <string name="yahoo">Поздравляем!</string>
+    <string name="proceed_next">Вы успешно прошли регистрацию.\nВведите код из смс в поле ниже и нажмите “Продолжить”.</string>
+    <string name="sms_code">Код из смс-сообщения</string>
+    <string name="proceed">Продолжить</string>
+    <string name="go_to_auth">Вы уже зарегистрированы.\nПерейдите к авторизации.</string>
+    <string name="authorization">Авторизация</string>
+    <string name="forgot_pswrd">Не помню пароль</string>
+    <string name="name">Имя</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="show">Показать</string>
+    <string name="did_not_get_the_code">Я не получил код</string>
+    <string name="confirm_pswrd">Повторите пароль</string>
+    <string name="secret_question_answr">Ответ на секретный вопрос</string>
+    <string name="agreement">Я согласен с условиями обработки персональных данных</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="registered_already">Уже зарегистрированы?</string>
+</resources>

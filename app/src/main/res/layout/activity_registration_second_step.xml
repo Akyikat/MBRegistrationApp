@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/font_30_black_semi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/registration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/font_16_gray03_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:background="@drawable/bg_et_gray01"
+            android:hint="@string/name"
+            android:padding="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/font_16_gray03_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:background="@drawable/bg_et_gray01"
+            android:hint="@string/phone_num"
+            android:inputType="phone"
+            android:padding="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/font_16_gray03_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:background="@drawable/bg_et_gray01"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/et_phone" />
+
+        <Button
+            android:id="@+id/btn_show_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/show"
+            android:textAllCaps="false"
+            android:textColor="@color/orange_primary"
+            app:layout_constraintBottom_toBottomOf="@id/et_password"
+            app:layout_constraintEnd_toEndOf="@id/et_password"
+            app:layout_constraintTop_toTopOf="@id/et_password" />
+
+        <EditText
+            android:id="@+id/et_confirm_password"
+            style="@style/font_16_gray03_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:background="@drawable/bg_et_gray01"
+            android:hint="@string/confirm_pswrd"
+            android:inputType="textPassword"
+            android:padding="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+        <Button
+            android:id="@+id/btn_show_confirm_pswrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/show"
+            android:textAllCaps="false"
+            android:textColor="@color/orange_primary"
+            app:layout_constraintBottom_toBottomOf="@id/et_confirm_password"
+            app:layout_constraintEnd_toEndOf="@id/et_confirm_password"
+            app:layout_constraintTop_toTopOf="@id/et_confirm_password" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:background="@drawable/bg_et_gray01"
+            android:spinnerMode="dropdown"
+            app:layout_constraintTop_toBottomOf="@id/et_confirm_password" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:src="@drawable/ic_triangle"
+            app:layout_constraintBottom_toBottomOf="@id/spinner"
+            app:layout_constraintEnd_toEndOf="@id/spinner"
+            app:layout_constraintTop_toTopOf="@id/spinner" />
+
+        <EditText
+            android:id="@+id/et_answer"
+            style="@style/font_16_gray03_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:background="@drawable/bg_et_gray01"
+            android:hint="@string/secret_question_answr"
+            android:paddingStart="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@id/spinner" />
+
+        <EditText
+            android:id="@+id/personal_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_answer" />
+
+        <CheckBox
+            android:id="@+id/ch_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/agreement"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_answer" />
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:background="@drawable/background_button"
+            android:letterSpacing="0.02"
+            android:text="@string/sign_up"
+            style="@style/font_18_white_semi"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/personal_data" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@android:color/transparent"
+            android:text="@string/registered_already"
+            style="@style/font_18_primary_semi"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register" />
+</androidx.constraintlayout.widget.ConstraintLayout>
