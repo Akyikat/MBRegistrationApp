@@ -31,7 +31,7 @@
     <style name="font_16_gray03_medium">
         <item name="fontFamily">@font/inter_medium</item>
         <item name="android:textSize">@dimen/sp_16</item>
-        <item name="android:textColor">@color/gray_03</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="font_16_gray04_medium">

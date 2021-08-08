@@ -12,9 +12,8 @@ abstract class BaseActivity<VM : ViewModel, VB: androidx.viewbinding.ViewBinding
 ) : AppCompatActivity() {
 
     lateinit var binding: VB
-    abstract fun getViewBinding(): VB
-    lateinit var viewModel: VM
 
+    lateinit var viewModel: VM
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +24,9 @@ abstract class BaseActivity<VM : ViewModel, VB: androidx.viewbinding.ViewBinding
         subscribeToLiveData()
     }
 
-    abstract fun setupViews()
-    abstract fun subscribeToLiveData()
+    open fun setupViews() {}
+
+    open fun subscribeToLiveData() {}
+
+    abstract fun getViewBinding(): VB
 }
